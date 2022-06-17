@@ -1,0 +1,84 @@
+@import url('https://fonts.google.com/specimen/Big+Shoulders+Display');
+.grid-container{
+    display: grid;
+    width: 60%;
+    height: 450px;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-areas: 
+    'a a a a a b b'
+    'a a a a a b b'
+    'a a a a a b b'
+    'a a a a a b b'
+    'a a a a a b b'
+    'a a a a a b b'
+    'c c c c d d d'
+    'c c c c d d d'
+    'c c c c d d d'
+    'c c c c e e e'
+    'c c c c e e e'
+    'c c c c e e e'
+    'c c c c e e e'; 
+}
+.top-nav{
+    height: fit-content;
+    width: fit-content;
+    float: right;
+    overflow: hidden;
+    background-color: #333;
+    /* padding-right: 30px; */
+    /* padding-left: 30px; */
+    /* color: black; */
+}
+.top-nav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    /* padding-right: 30px; */
+    font-family: 'Lexend Deca';
+}
+.top-nav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+.grid-div{
+    /* background-color: black; */
+    width: 100%;
+    height: 100vh;
+}
+.grid-item-1{
+    background-color: orangered;
+    grid-area: a;
+}
+.grid-item-2{
+    background-color: yellow;
+    grid-area: b;
+}
+.grid-item-3{
+    background-color: green;
+    grid-area: c;
+}
+.grid-item-4{
+    background-color: blue;
+    grid-area: d;
+}
+.grid-item-5{
+    background-color: blue;
+    grid-area: e;
+}
+.grid-div{
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    /* body { */
+        /* display: inline; */
+        /* width: 400px; */
+    /* } */
+    .grid-container{
+        width: 100%;
+        height: 30vh;
+    }
+  }

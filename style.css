@@ -1,0 +1,117 @@
+@import url('https://fonts.google.com/specimen/Big+Shoulders+Display');
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+body{
+
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(0, 0%, 95%);
+}
+.flexbox-container{
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(0, 0%, 95%);
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+}
+.flexbox-item{
+    width: 240px;
+    margin: 0px;
+}
+.flexbox-item-1{
+    min-height: 400px;
+    background-color: hsl(31, 77%, 52%);
+}
+.flexbox-item-2{
+    min-height: 400px;
+    background-color: hsl(184, 100%, 22%);
+}
+.flexbox-item-3{
+    min-height: 400px;
+    background-color: hsl(179, 100%, 13%);
+}
+.image{
+    padding-top: 40px;
+    padding-left: 30px;
+}
+h2{
+    font-weight: 700;
+    color: hsl(0, 0%, 95%); 
+    padding-left: 30px;
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+p{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.Learn-More{
+    padding-left: 30px;
+    padding-top: 45px;
+}
+button{
+    border-radius: 15px;
+    height: 33px;
+    width: 100px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    cursor: pointer;
+}
+.button1{
+    color: hsl(31, 77%, 52%);
+}
+.button1:focus{
+    background-color: hsl(31, 77%, 52%);
+    border: white solid 1px;
+    color: white;
+}
+.button2{
+    color: hsl(184, 100%, 22%);
+}
+.button2:focus{
+    background-color: hsl(184, 100%, 22%);
+    border: white solid 1px;
+    color: white;
+}
+.button3{
+    color: hsl(179, 100%, 13%);
+}
+.button3:focus{
+    background-color: hsl(179, 100%, 13%);
+    border: white solid 1px;
+    color: white;
+}
+.top-nav{
+    height: fit-content;
+    width: fit-content;
+    float: right;
+    overflow: hidden;
+    background-color: #333;
+}
+.top-nav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Lexend Deca';
+  }
+.top-nav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        display: inline;
+        width: 400px;
+    }
+    .flexbox-container{
+        display: block;
+    }
+  }
+  
